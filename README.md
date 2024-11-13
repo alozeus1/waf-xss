@@ -30,10 +30,14 @@ This repository provides a solution to prevent AWS WAF from blocking legitimate 
 
 #### Deployment Steps
 
-1. Initialize Terraform:
+1. Initialize and Deploy Terraform:
 
    ```bash
    terraform init
+
+   terraform plan
+
+   terraform apply --auto-approve
 
 2. Server-Side Input Sanitization
 Action Required: Implement a sanitization library in your backend code.
